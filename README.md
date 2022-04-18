@@ -40,3 +40,8 @@ const Component: React.FC<{ onHandler: (text: string) => void }> = (props) {
 ```
 pass arrow function with return type and parameters typed when using as custom props to the component
 
+```js
+const Component: React.FC<{ children: React.ReactNode }> = (props) => {}
+```
+with strict mode, have to add the children as `React.ReactNode` for it to work correctly
+
